@@ -1,8 +1,8 @@
 body {
-   background: #000;
-   color: #fff;
+   background: #fff; /*white*/
+   color: #000; /*black*/
    font-family: Arial;
-   font-size: 22px;
+   font-size: 14px;
 }
 
 
