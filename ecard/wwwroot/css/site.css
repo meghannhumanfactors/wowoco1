@@ -17,6 +17,12 @@ a {
     a:focus {
         color: #94268c;
     }
+
+.container {
+    padding-top: 3em;
+}
+
+    /*<!--Bootstrap Over Rides-->*/
 .carousel-inner .item .images {
     width: 70%;
     margin: auto;
@@ -26,4 +32,11 @@ a {
     opacity: 0.5;
     color: #fff;
     background: #000;
+}
+
+/*Removes gradient/shading behind the controls */
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+    outline: 0;
+    opacity: 1;
 }
