@@ -8,7 +8,7 @@
 <html>
 <head>
     <title>My eCard</title>
-    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />  @*UPDATED TO BOWSER BOOTSTRAP 4 JQUERY*@
     <link href="~/css/site.css" rel="stylesheet" />
 
 </head>
@@ -16,66 +16,80 @@
 
 
 <body>
-    <!-- CAROUSEL.........START........................................................................... -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-            <li data-target="#myCarousel" data-slide-to="3"></li>
-            <li data-target="#myCarousel" data-slide-to="4"></li>
-            <li data-target="#myCarousel" data-slide-to="5"></li>
-            <li data-target="#myCarousel" data-slide-to="6"></li>
-        </ol>
 
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-            <div class="item active" data-interval="800000">
-                <a href="" target="_blank"><img src="~/images/card_anniversary.png" alt="Pic of ANNIVERSARY CARD" /></a>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-6">
+                <!-- CAROUSEL.........START............................................................... -->
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                        <li data-target="#myCarousel" data-slide-to="4"></li>
+                        <li data-target="#myCarousel" data-slide-to="5"></li>
+                        <li data-target="#myCarousel" data-slide-to="6"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active" data-interval="800000">
+                            <a href="" target="_blank"><img src="~/images/card_anniversary.png" alt="Pic of ANNIVERSARY CARD" /></a>
+                        </div>
+
+                        <div class="item" data-interval="800000">
+                            <a href="" target="_blank"><img src="~/images/card_babyshower.png" alt="Pic of BABYSHOWER CARD"></a>
+                        </div>
+
+                        <div class="item" data-interval="800000">
+                            <a href="" target="_blank"><img src="~/images/card_birthday.png" alt="Pic of BIRTHDAY FRAME" /></a>
+                        </div>
+
+                        <div class="item" data-interval="800000">
+                            <a href="" target="_blank"><img src="~/images/card_frame_black.png" alt="Pic of BLACK FRAME" /> </a>
+                        </div>
+
+                        <div class="item" data-interval="800000">
+                            <a href="" target="_blank"><img src="~/images/card_frame_gold.png" alt="PIC of GOLD FRAME  " /></a>
+                        </div>
+                        <div class="item" data-interval="800000">
+                            <a href="" target="_blank"><img src="~/images/card_frame_wood.png" alt="PIC of WOOD FRAME  " /></a>
+                        </div>
+                        <div class="item" data-interval="800000">
+                            <a href="" target="_blank"><img src="~/images/card_valentines.png" alt="PIC valentines FRAME  " /></a>
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+                <!-- CAROUSEL.........END............................................................... -->
             </div>
 
-            <div class="item" data-interval="800000">
-                <a href="" target="_blank"><img src="~/images/card_babyshower.png" alt="Pic of BABYSHOWER CARD"></a>
+            <div class="col-sm-6">
+               <!--  GRID    --> 
             </div>
 
-            <div class="item" data-interval="800000">
-                <a href="" target="_blank"><img src="~/images/card_birthday.png" alt="Pic of BIRTHDAY FRAME" /></a>
-            </div>
-
-            <div class="item" data-interval="800000">
-                <a href="" target="_blank"><img src="~/images/card_frame_black.png" alt="Pic of BLACK FRAME" /> </a>
-            </div>
-
-            <div class="item" data-interval="800000">
-                <a href="" target="_blank"><img src="~/images/card_frame_gold.png" alt="PIC of GOLD FRAME  " /></a>
-            </div>
-            <div class="item" data-interval="800000">
-                <a href="" target="_blank"><img src="~/images/card_frame_wood.png" alt="PIC of WOOD FRAME  " /></a>
-            </div>
-            <div class="item" data-interval="800000">
-                <a href="" target="_blank"><img src="~/images/card_valentines.png" alt="PIC valentines FRAME  " /></a>
-            </div>
         </div>
 
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-            <span class="sr-only">Next</span>
-        </a>
     </div>
-
-    <!-- CAROUSEL.........END........................................................................... -->
-
-
-    <!-- START CODE FOR LIB-->
-    <script src="~/lib/jquery/dist/jquery.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-    <!-- END CODE FOR LIB -->
+        
+               
+                <!-- START CODE FOR LIB-->
+                <script src="~/lib/jquery/dist/jquery.js"></script>
+                <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+                <!-- END CODE FOR LIB -->
 </body>
 
 </html>
